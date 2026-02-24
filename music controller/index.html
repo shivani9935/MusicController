@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="music-player">
+    <nav>
+        <div class="circle">
+            <i class="ri-arrow-left-s-line"></i>
+        </div>
+        <div class="circle">
+            <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+    <img src="media/thumbnai.jpg" class="song-img">
+    <h1>Despasito</h1>
+    <p>Luise Fonsi Ft. Puerto Rican</p>
+
+    <audio  id="song">
+        <source src="media/music1.mp4" type="audio/mpeg">
+    </audio>
+    <input type="range" value="0" id="progress">
+
+     <div class="controls">
+        <div><i class="ri-rewind-fill"></i></div>
+        <div onclick="playPause()"><i class="ri-play-fill" id="ctrlIcon"></i></div>
+        <div><i class="ri-speed-fill"></i></div>
+     </div>
+
+</div>
+</div>  
+<script src="script.js"></script>
+</body>
+</html>
